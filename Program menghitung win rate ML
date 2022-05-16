@@ -1,9 +1,9 @@
 print("Program Penghitung Win Rate")
 print("="*27)
 Nama_hero = input("Nama hero : ")
-Total_match = int(input("Total Match: "))
-Total_Winrate = float(input("Winrate sekarang: "))
-Winrate_Goal = float(input("Winrate impian: "))
+Total_match = int(input("Total Match : "))
+Total_Winrate = float(input("Winrate sekarang : "))
+Winrate_Goal = float(input("Winrate impian : "))
 Win = Total_match * (Total_Winrate / 100)
 if Total_match != Win :
     Lose = Total_match - Win
