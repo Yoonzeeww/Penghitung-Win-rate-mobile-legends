@@ -1,0 +1,14 @@
+print("Program Penghitung Win Rate")
+print("="*27)
+Total_match = int(input("Total Match: "))
+Total_Winrate = float(input("Winrate sekarang: "))
+Winrate_Goal = float(input("Winrate impian: "))
+Win = Total_match * (Total_Winrate / 100)
+if Total_match != Win :
+    Lose = Total_match - Win
+    Win_rate = 100 - Winrate_Goal
+if Win_rate != Winrate_Goal:
+    Result = 100 / Win_rate
+    Match_diperlukan = Lose * Result 
+Winrate_Need = (Match_diperlukan - Total_match)
+print("Kamu membutuhkan",int(Winrate_Need),"Pertandingan tanpa kalah untuk mendapatkan Win Rate:",int(Winrate_Goal),("%"))
